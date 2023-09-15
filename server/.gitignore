@@ -1,0 +1,12 @@
+# dependencies
+/node_modules
+
+# data files
+/data
+
+# lockers
+/yarn.lock
+/package-lock.json
+
+# env files
+/.env
