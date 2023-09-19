@@ -23,5 +23,9 @@
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "cSpell.words": ["décor", "hasibul"]
+  "cSpell.words": [
+    "décor",
+    "hasibul",
+    "tailwindcss"
+  ]
 }
