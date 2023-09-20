@@ -25,7 +25,7 @@ import Cart from "@/components/icons/Cart";
 const Header = () => {
   return (
     <nav className="max-w-7xl mx-auto">
-      <div className="flex flex-row items-center gap-x-4">
+      <div className="flex flex-row flex-wrap items-center gap-4">
         <Logo className="text-[f1641e] h-10 w-20" />
         <SearchBar />
         <Button>

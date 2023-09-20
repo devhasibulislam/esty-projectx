@@ -44,7 +44,10 @@ function Modal({ isOpen, onClose, children, title }) {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center overflow-x-hidden overflow-y-auto outline-none focus:outline-none bg-black/70">
       <OutsideClickClose onOutsideClick={onClose}>
-        <div ref={modalRef} className="relative w-auto max-w-md mx-auto my-6">
+        <div
+          ref={modalRef}
+          className="relative w-auto max-w-md mx-auto my-6 md:px-0 px-4"
+        >
           {/* Modal content */}
           <div className="relative flex flex-col w-full bg-white border-0 rounded-lg shadow-lg outline-none focus:outline-none">
             {/* Header */}
