@@ -62,7 +62,7 @@ function Button({ children, ...props }) {
     <button
       {...props}
       className={
-        "bg-slate-100 p-3 rounded-full hover:bg-slate-300 hover:text-white duration-100" +
+        "bg-slate-100 p-3 rounded-full hover:bg-slate-300 hover:text-white transition-colors duration-100" +
         " " +
         props.className
       }

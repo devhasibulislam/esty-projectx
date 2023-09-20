@@ -40,7 +40,7 @@ const ProductCard = ({ product }) => {
             {shop}
           </p>
         </div>
-        <button className="bg-violet-500 py-2 px-4 rounded-r-full text-white w-fit text-sm">
+        <button className="bg-violet-500 hover:bg-violet-700 transition-colors delay-100 py-2 px-4 rounded-r-full text-white w-fit text-sm">
           Buy Now
         </button>
       </article>
