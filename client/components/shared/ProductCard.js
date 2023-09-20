@@ -97,9 +97,12 @@ const ProductCard = ({ product }) => {
                     <span className="text-xs">Shop from:</span>
                     {shop}
                   </p>
-                  <p className="text-base flex flex-row gap-x-0.5 items-baseline pb-0">
+                  <hr className="my-1" />
+                  <p className="text-base flex flex-col gap-y-1 items-baseline pb-0">
                     <span className="text-xs">Estimated delivery:</span>
-                    {shop}
+                    <span className="border-b border-b-black  border-dashed">
+                      {Date.now().toLocaleString("en")}
+                    </span>
                   </p>
                 </div>
               </div>
