@@ -41,9 +41,9 @@ const Home = ({ womensDress }) => {
 
 export async function getStaticProps() {
   const response = await fetch(
-    `${process.env.NEXT_PUBLIC_BASE_URL}/data/womenDresses.json`
+    `${process.env.BASE_URL}/data/womenDresses.json`
   );
-  const data = await response.json();
+  const data = (await response.json()) || [];
 
   return {
     props: {
