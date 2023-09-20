@@ -17,7 +17,41 @@ import Header from "@/components/header/largeDevice/Header";
 import ProductCard from "@/components/shared/ProductCard";
 import React from "react";
 
-const Home = ({ womensDress }) => {
+const Home = () => {
+  const womensDress = [
+    {
+      title:
+        "Deborah - red pencil pleated button back vintage dress inspired from custom made",
+      price: 49.99,
+      shop: "TheLinoLounge",
+      thumbnail:
+        "https://i.etsystatic.com/5620966/r/il/3ff048/4584504065/il_1140xN.4584504065_gwnv.jpg",
+    },
+    {
+      title: "UNIQUE galaxy dress fishtail pencil style custom made all sizes",
+      price: 120.0,
+      shop: "HeartMyCloset",
+      thumbnail:
+        "https://i.etsystatic.com/5620966/r/il/84fa39/1545907429/il_1140xN.1545907429_nxob.jpg",
+    },
+    {
+      title:
+        "Deborah pencil pleated button back vintage dress inspired from custom made",
+      price: 125.5,
+      shop: "FlozzyDesignsOZ",
+      thumbnail:
+        "https://i.etsystatic.com/5620966/r/il/1890ca/1400605096/il_1140xN.1400605096_o5zu.jpg",
+    },
+    {
+      title:
+        "Dark RED polkadot Rose pencil dress + removable skirt wrap/ custom made all sizes 40s 50s",
+      price: 180.5,
+      shop: "LinenMade",
+      thumbnail:
+        "https://i.etsystatic.com/5620966/r/il/7eecaa/5237194658/il_794xN.5237194658_4c03.jpg",
+    },
+  ];
+
   return (
     <section className="flex flex-col gap-y-8">
       <header className="bg-white p-4 shadow">
@@ -38,18 +72,5 @@ const Home = ({ womensDress }) => {
     </section>
   );
 };
-
-export async function getStaticProps() {
-  const response = await fetch(
-    `${process.env.NEXT_PUBLIC_BASE_URL}/data/womenDresses.json`
-  );
-  const data = (await response.json()) || [];
-
-  return {
-    props: {
-      womensDress: data,
-    },
-  };
-}
 
 export default Home;
