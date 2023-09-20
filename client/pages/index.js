@@ -15,10 +15,9 @@
 
 import Header from "@/components/header/largeDevice/Header";
 import ProductCard from "@/components/shared/ProductCard";
-import womensDress from "@/data/womensDress";
 import React from "react";
 
-const Home = () => {
+const Home = ({ womensDress }) => {
   return (
     <section className="flex flex-col gap-y-8">
       <header className="bg-white p-4 shadow">
@@ -39,5 +38,18 @@ const Home = () => {
     </section>
   );
 };
+
+export async function getStaticProps() {
+  const response = await fetch(
+    `${process.env.NEXT_PUBLIC_BASE_URL}/data/womenDresses.json`
+  );
+  const data = await response.json();
+
+  return {
+    props: {
+      womensDress: data,
+    },
+  };
+}
 
 export default Home;
