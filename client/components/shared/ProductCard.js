@@ -20,6 +20,7 @@ import Modal from "./Modal";
 const ProductCard = ({ product }) => {
   const { title, price, shop, thumbnail } = product || {};
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [imageLoaded, setImageLoaded] = useState(false);
 
   const openModal = () => {
     setIsModalOpen(true);
@@ -29,15 +30,27 @@ const ProductCard = ({ product }) => {
     setIsModalOpen(false);
   };
 
+  const handleImageLoad = () => {
+    setImageLoaded(true);
+  };
+
   return (
     <div className="flex flex-col gap-y-4">
+      <div
+        className={`${
+          imageLoaded ? "hidden" : "block"
+        } bg-gray-200 h-[260.06px] w-full max-w-full object-cover object-center rounded animate-pulse`}
+      ></div>
       <Image
         src={thumbnail}
         alt={title}
         height={260.06}
         width={327.5}
         className="h-[260.06px] w-full max-w-full object-cover object-center rounded"
+        onLoad={handleImageLoad}
+        onError={() => console.error("Error loading image")}
       />
+
       <article className="flex flex-col gap-y-1">
         <h2 className="line-clamp-1 text-lg">{title}</h2>
         <div className="flex justify-between items-center text-sm">
@@ -76,11 +89,11 @@ const ProductCard = ({ product }) => {
               <div className="bg-[#eaeaea99] p-2 rounded flex flex-col gap-y-2 h-fit">
                 <h2 className="line-clamp-2">{title}</h2>
                 <div className="flex flex-col gap-y-0">
-                  <p className="text-base flex flex-row gap-x-0.5 items-baseline pb-0">
+                  <p className="text-sm flex flex-row gap-x-0.5 items-baseline pb-0">
                     <span className="text-xs">Price: $</span>
                     {price}
                   </p>
-                  <p className="text-base flex flex-row gap-x-0.5 items-baseline pb-0">
+                  <p className="text-sm flex flex-row gap-x-0.5 items-baseline pb-0">
                     <span className="text-xs">Shop from</span>
                     {shop}
                   </p>
@@ -89,16 +102,16 @@ const ProductCard = ({ product }) => {
 
               <div className="bg-[#eaeaea99] p-2 rounded flex flex-col gap-y-2 h-fit">
                 <div className="flex flex-col gap-y-0">
-                  <p className="text-base flex flex-row gap-x-0.5 items-baseline pb-0">
+                  <p className="text-sm flex flex-row gap-x-0.5 items-baseline pb-0">
                     <span className="text-xs">Shipping: $</span>
                     {(price * 0.2).toFixed(2)}
                   </p>
-                  <p className="text-base flex flex-row gap-x-0.5 items-baseline pb-0">
+                  <p className="text-sm flex flex-row gap-x-0.5 items-baseline pb-0">
                     <span className="text-xs">Shop from:</span>
                     {shop}
                   </p>
                   <hr className="my-1" />
-                  <p className="text-base flex flex-col gap-y-1 items-baseline pb-0">
+                  <p className="text-sm flex flex-col gap-y-1 items-baseline pb-0">
                     <span className="text-xs">Estimated delivery:</span>
                     <span className="border-b border-b-black  border-dashed">
                       {Date.now().toLocaleString("en")}
