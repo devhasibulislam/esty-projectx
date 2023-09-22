@@ -14,7 +14,7 @@
  */
 
 import Logo from "@/components/icons/Logo";
-import React from "react";
+import React, { useState } from "react";
 import SearchBar from "./SearchBar";
 import Favorite from "@/components/icons/Favorite";
 import Bell from "@/components/icons/Bell";
@@ -23,6 +23,12 @@ import Image from "next/image";
 import Cart from "@/components/icons/Cart";
 
 const Header = () => {
+  const [imageLoaded, setImageLoaded] = useState(false);
+
+  const handleImageLoad = () => {
+    setImageLoaded(true);
+  };
+
   return (
     <nav className="max-w-7xl mx-auto">
       <div className="flex flex-row flex-wrap items-center gap-4">
@@ -36,14 +42,22 @@ const Header = () => {
           <Down className="h-6 w-6" />
         </Button>
         <Button className="flex flex-row items-center">
-          <Image
-            src="https://i.etsystatic.com/site-assets/images/global-nav/no-user-avatar.svg"
-            alt="user avatar"
-            height={24}
-            width={24}
-            className="rounded-full"
-            priority
-          />
+          {imageLoaded && (
+            <div
+              className={`bg-gray-200 h-[24px] w-[24px] max-w-full rounded-full animate-pulse border`}
+            ></div>
+          )}
+          {!imageLoaded && (
+            <Image
+              src="https://i.etsystatic.com/site-assets/images/global-nav/no-user-avatar.svg"
+              alt="user avatar"
+              height={24}
+              width={24}
+              className="rounded-full h-[24px] w-[24px] max-w-full object-cover border"
+              onLoad={handleImageLoad}
+              onError={() => console.error("1. Error loading image :(")}
+            />
+          )}
           <Down className="h-6 w-6" />
         </Button>
         <Button className="relative">
