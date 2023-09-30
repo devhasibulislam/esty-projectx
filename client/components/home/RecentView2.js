@@ -1,5 +1,5 @@
 /**
- * Title: Write a program using JavaScript on RecentView1
+ * Title: Write a program using JavaScript on RecentView2
  * Author: Hasibul Islam
  * Portfolio: https://devhasibulislam.vercel.app
  * Linkedin: https://linkedin.com/in/devhasibulislam
@@ -17,19 +17,15 @@ import Image from "next/image";
 import React from "react";
 import Favorite from "../icons/Favorite";
 
-const RecentView1 = () => {
+const RecentView2 = () => {
   const recentThumbnails = [
-    "https://i.etsystatic.com/5620966/r/il/a06160/4584504603/il_75x75.4584504603_fr5r.jpg",
-    "https://i.etsystatic.com/5620966/r/il/84fa39/1545907429/il_75x75.1545907429_nxob.jpg",
-    "https://i.etsystatic.com/5620966/c/981/779/0/102/il/7522cb/5121158485/il_75x75.5121158485_1ia3.jpg",
-    "https://i.etsystatic.com/5620966/c/2379/1891/0/40/il/b993b9/3945966809/il_75x75.3945966809_d7qe.jpg",
-    "https://i.etsystatic.com/5620966/c/1915/1520/0/844/il/486024/1908100443/il_75x75.1908100443_qbbj.jpg",
+    "https://i.etsystatic.com/33208167/r/il/e0390f/4681827529/il_75x75.4681827529_m7cu.jpg",
   ];
 
   const recentProducts = [
     {
       thumbnail:
-        "https://i.etsystatic.com/37815744/c/2000/1588/0/222/il/9e18a4/5323316077/il_680x540.5323316077_eswp.jpg",
+        "https://i.etsystatic.com/33918027/c/2941/2337/50/465/il/d15d49/5206676490/il_340x270.5206676490_8cq4.jpg",
       price: {
         amount: 193.55,
         currency: "USD",
@@ -37,7 +33,7 @@ const RecentView1 = () => {
     },
     {
       thumbnail:
-        "https://i.etsystatic.com/15013437/c/405/323/0/39/il/a684dd/2129979960/il_340x270.2129979960_c0xi.jpg",
+        "https://i.etsystatic.com/45017423/r/il/c6ad00/5376818453/il_340x270.5376818453_ihvr.jpg",
       price: {
         amount: 68.16,
         currency: "USD",
@@ -45,7 +41,7 @@ const RecentView1 = () => {
     },
     {
       thumbnail:
-        "https://i.etsystatic.com/38276030/c/2000/1588/0/437/il/0cd977/5218443194/il_340x270.5218443194_t9oy.jpg",
+        "https://i.etsystatic.com/13346155/c/2490/1979/234/191/il/136a5d/3149555444/il_340x270.3149555444_max4.jpg",
       price: {
         amount: 216.77,
         currency: "USD",
@@ -53,7 +49,7 @@ const RecentView1 = () => {
     },
     {
       thumbnail:
-        "https://i.etsystatic.com/37363038/r/il/ee306b/4700845567/il_340x270.4700845567_azbs.jpg",
+        "https://i.etsystatic.com/42344007/r/il/04fbf2/4969465555/il_340x270.4969465555_tb8w.jpg",
       price: {
         amount: 29.99,
         currency: "USD",
@@ -61,25 +57,9 @@ const RecentView1 = () => {
     },
     {
       thumbnail:
-        "https://i.etsystatic.com/27333946/c/2000/1589/0/128/il/5c3484/5166283912/il_340x270.5166283912_o659.jpg",
+        "https://i.etsystatic.com/38699671/c/2000/1589/0/264/il/37085f/4442523071/il_340x270.4442523071_dgwn.jpg",
       price: {
         amount: 210.92,
-        currency: "USD",
-      },
-    },
-    {
-      thumbnail:
-        "https://i.etsystatic.com/9000595/c/3000/2382/0/183/il/378635/5323487361/il_340x270.5323487361_a7rd.jpg",
-      price: {
-        amount: 120.0,
-        currency: "USD",
-      },
-    },
-    {
-      thumbnail:
-        "https://i.etsystatic.com/41502895/c/1080/857/0/0/il/6f4f40/5133790743/il_340x270.5133790743_hmb4.jpg",
-      price: {
-        amount: 31.28,
         currency: "USD",
       },
     },
@@ -88,23 +68,23 @@ const RecentView1 = () => {
   const recentCategories = [
     {
       thumbnail:
-        "https://i.etsystatic.com/5620966/r/il/84fa39/1545907429/il_75x75.1545907429_nxob.jpg",
-      title: "vintage white pencil dress",
+        "https://i.etsystatic.com/34991569/r/il/1733b6/4687628324/il_75x75.4687628324_czgd.jpg",
+      title: "tulum decor modern",
     },
     {
       thumbnail:
-        "https://i.etsystatic.com/5620966/r/il/5bd5e4/1545907267/il_75x75.1545907267_prf3.jpg",
-      title: "custom made dress 1940s",
+        "https://i.etsystatic.com/34716735/c/2672/2124/171/102/il/8ef4dd/4193361254/il_75x75.4193361254_n6sr.jpg",
+      title: "tall blue vase",
     },
     {
       thumbnail:
-        "https://i.etsystatic.com/5620966/r/il/341867/2135923992/il_75x75.2135923992_a8lx.jpg",
-      title: "heartmycloset",
+        "https://i.etsystatic.com/33208167/r/il/87ba6d/4621600842/il_75x75.4621600842_pify.jpg",
+      title: "3d vase",
     },
     {
       thumbnail:
-        "https://i.etsystatic.com/34866546/r/il/b0b9ad/3866527573/il_75x75.3866527573_qdzm.jpg",
-      title: "wiggle skirt",
+        "https://i.etsystatic.com/33208167/r/il/e0390f/4681827529/il_75x75.4681827529_m7cu.jpg",
+      title: "green vase",
     },
   ];
 
@@ -130,9 +110,7 @@ const RecentView1 = () => {
           <div
             key={index}
             className={
-              "group relative col-span-2 hover:shadow-lg rounded-lg transition-shadow delay-100 ease-linear" +
-              " " +
-              `${index === 0 ? "row-span-2 col-span-4" : ""}`
+              "group relative col-span-2 hover:shadow-lg rounded-lg transition-shadow delay-100 ease-linear"
             }
           >
             <Image
@@ -208,4 +186,4 @@ function Button({ children, ...props }) {
   );
 }
 
-export default RecentView1;
+export default RecentView2;

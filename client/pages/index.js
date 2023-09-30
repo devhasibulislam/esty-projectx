@@ -15,6 +15,7 @@
 
 import Header from "@/components/header/largeDevice/Header";
 import RecentView1 from "@/components/home/RecentView1";
+import RecentView2 from "@/components/home/RecentView2";
 import ProductCard from "@/components/shared/ProductCard";
 import React from "react";
 
@@ -72,8 +73,7 @@ const Home = () => {
         <section
           className="p-8"
           style={{
-            background:
-              "linear-gradient(to bottom, #feecd4 70%, white 30%)",
+            background: "linear-gradient(to bottom, #feecd4 60%, white 40%)",
           }}
         >
           <div className="max-w-7xl mx-auto">
@@ -83,6 +83,9 @@ const Home = () => {
             </h1>
             <RecentView1 />
           </div>
+        </section>
+        <section className="max-w-7xl mx-auto">
+          <RecentView2 />
         </section>
       </main>
     </section>
