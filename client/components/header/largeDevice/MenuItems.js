@@ -32,7 +32,7 @@ const MenuItems = () => {
         {menuItems.map((item, index) => (
           <span
             key={index}
-            className="text-sm cursor-pointer border-b-2 border-b-transparent hover:border-b-black transition-colors delay-100 ease-linear pb-4"
+            className="text-sm cursor-pointer border-b-2 border-b-transparent hover:border-b-black transition-colors delay-100 ease-linear pb-2"
           >
             {item}
           </span>
