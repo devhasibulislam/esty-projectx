@@ -14,6 +14,7 @@
  */
 
 import Header from "@/components/header/largeDevice/Header";
+import RecentView1 from "@/components/home/RecentView1";
 import ProductCard from "@/components/shared/ProductCard";
 import React from "react";
 
@@ -53,20 +54,35 @@ const Home = () => {
   ];
 
   return (
-    <section className="flex flex-col gap-y-8">
+    <section className="">
       <header className="bg-white pt-4 shadow">
-        {/* This is for large device */}
         <Header />
       </header>
-      <main className="px-4 max-w-7xl mx-auto">
-        <section className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-8">
-          {/* This is for products card */}
+      <main className="">
+        {/* <section className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-8">
           {womensDress.map(({ title, price, shop, thumbnail }, index) => (
             <ProductCard
               key={index}
               product={{ title, price, shop, thumbnail }}
             />
           ))}
+        </section> */}
+
+        {/* <section className="bg-gradient-to-b from-[#feecd4] via-[#feecd4] to-white bg-cover p-8"> */}
+        <section
+          className="p-8"
+          style={{
+            background:
+              "linear-gradient(to bottom, #feecd4 70%, white 30%)",
+          }}
+        >
+          <div className="max-w-7xl mx-auto">
+            <h1 className="text-4xl text-center">
+              Welcome back,{" "}
+              <span className="underline cursor-pointer">Taeso Ma</span>
+            </h1>
+            <RecentView1 />
+          </div>
         </section>
       </main>
     </section>
