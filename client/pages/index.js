@@ -17,6 +17,7 @@ import Header from "@/components/header/largeDevice/Header";
 import RecentView1 from "@/components/home/RecentView1";
 import RecentView2 from "@/components/home/RecentView2";
 import ProductCard from "@/components/shared/ProductCard";
+import Head from "next/head";
 import React from "react";
 
 const Home = () => {
@@ -56,6 +57,9 @@ const Home = () => {
 
   return (
     <section className="">
+      <Head>
+        <title>Etsy ProjectX</title>
+      </Head>
       <header className="bg-white pt-4 shadow">
         <Header />
       </header>
