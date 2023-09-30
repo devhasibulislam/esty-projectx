@@ -167,7 +167,7 @@ const RecentView1 = () => {
               width={75}
               className="rounded-full"
             />
-            <p className="group text-sm flex flex-row gap-x-2 items-center">
+            <p className="group text-sm flex flex-row gap-x-2 items-center font-bold">
               {category.title}{" "}
               <span className="">
                 <svg
