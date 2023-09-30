@@ -85,6 +85,29 @@ const RecentView1 = () => {
     },
   ];
 
+  const recentCategories = [
+    {
+      thumbnail:
+        "https://i.etsystatic.com/5620966/r/il/84fa39/1545907429/il_75x75.1545907429_nxob.jpg",
+      title: "vintage white pencil dress",
+    },
+    {
+      thumbnail:
+        "https://i.etsystatic.com/5620966/r/il/5bd5e4/1545907267/il_75x75.1545907267_prf3.jpg",
+      title: "custom made dress 1940s",
+    },
+    {
+      thumbnail:
+        "https://i.etsystatic.com/5620966/r/il/341867/2135923992/il_75x75.2135923992_a8lx.jpg",
+      title: "heartmycloset",
+    },
+    {
+      thumbnail:
+        "https://i.etsystatic.com/34866546/r/il/b0b9ad/3866527573/il_75x75.3866527573_qdzm.jpg",
+      title: "wiggle skirt",
+    },
+  ];
+
   return (
     <section className="flex flex-col gap-y-4">
       <div className="flex flex-col gap-y-2">
@@ -128,6 +151,41 @@ const RecentView1 = () => {
             <Button className="absolute top-2 right-2 group-hover:opacity-100 opacity-0 transition-opacity delay-100 ease-linear">
               <Favorite className="w-6 h-6" />
             </Button>
+          </div>
+        ))}
+      </div>
+      <div className="flex flex-row justify-between gap-x-4">
+        {recentCategories.map((category, index) => (
+          <div
+            key={index}
+            className="flex flex-row gap-x-2 items-center border px-4 py-2 w-full rounded-md hover:shadow cursor-pointer transition-shadow delay-100 ease-linear"
+          >
+            <Image
+              src={category.thumbnail}
+              alt={category.thumbnail}
+              height={75}
+              width={75}
+              className="rounded-full"
+            />
+            <p className="group text-sm flex flex-row gap-x-2 items-center">
+              {category.title}{" "}
+              <span className="">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="w-4 h-4 group-hover:translate-x-1.5 transition-transform delay-100 ease-linear"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
+                  />
+                </svg>
+              </span>
+            </p>
           </div>
         ))}
       </div>
