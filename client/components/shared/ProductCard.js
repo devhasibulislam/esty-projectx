@@ -21,7 +21,6 @@ import ModalContent from "./ModalContent";
 const ProductCard = ({ product }) => {
   const { title, price, shop, thumbnail } = product || {};
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [imageLoaded, setImageLoaded] = useState(false);
 
   const openModal = () => {
     setIsModalOpen(true);
@@ -31,27 +30,15 @@ const ProductCard = ({ product }) => {
     setIsModalOpen(false);
   };
 
-  const handleImageLoad = () => {
-    setImageLoaded(true);
-  };
-
   return (
     <div className="flex flex-col gap-y-4">
-      {imageLoaded ? (
-        <div
-          className={`bg-gray-200 h-[260.06px] w-full max-w-full object-cover object-center rounded animate-pulse`}
-        ></div>
-      ) : (
-        <Image
-          src={thumbnail}
-          alt={title}
-          height={260.06}
-          width={327.5}
-          className="h-[260.06px] w-full max-w-full object-cover object-center rounded"
-          onLoad={handleImageLoad}
-          onError={() => console.error("2. Error loading image :(")}
-        />
-      )}
+      <Image
+        src={thumbnail}
+        alt={title}
+        height={260.06}
+        width={327.5}
+        className="h-[260.06px] w-full max-w-full object-cover object-center rounded"
+      />
 
       <article className="flex flex-col gap-y-1">
         <h2 className="line-clamp-1 text-lg">{title}</h2>

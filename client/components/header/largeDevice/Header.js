@@ -14,59 +14,48 @@
  */
 
 import Logo from "@/components/icons/Logo";
-import React, { useState } from "react";
+import React from "react";
 import SearchBar from "./SearchBar";
 import Favorite from "@/components/icons/Favorite";
 import Bell from "@/components/icons/Bell";
 import Down from "@/components/icons/Down";
 import Image from "next/image";
 import Cart from "@/components/icons/Cart";
+import MenuItems from "./MenuItems";
 
 const Header = () => {
-  const [imageLoaded, setImageLoaded] = useState(false);
-
-  const handleImageLoad = () => {
-    setImageLoaded(true);
-  };
-
   return (
     <nav className="max-w-7xl mx-auto">
-      <div className="flex flex-row flex-wrap items-center gap-4">
-        <Logo className="text-[f1641e] h-10 w-20" />
-        <SearchBar />
-        <Button>
-          <Favorite className="h-6 w-6" />
-        </Button>
-        <Button className="flex flex-row items-center">
-          <Bell className="h-6 w-6" />
-          <Down className="h-6 w-6" />
-        </Button>
-        <Button className="flex flex-row items-center">
-          {imageLoaded && (
-            <div
-              className={`bg-gray-200 h-[24px] w-[24px] max-w-full rounded-full animate-pulse border`}
-            ></div>
-          )}
-          {!imageLoaded && (
+      <section className="w-full h-full flex flex-col gap-y-4">
+        <div className="flex flex-row flex-wrap items-center gap-4">
+          <Logo className="text-[#f1641e] h-10 w-20" />
+          <SearchBar />
+          <Button>
+            <Favorite className="h-6 w-6" />
+          </Button>
+          <Button className="flex flex-row items-center">
+            <Bell className="h-6 w-6" />
+            <Down className="h-6 w-6" />
+          </Button>
+          <Button className="flex flex-row items-center">
             <Image
-              src="https://i.etsystatic.com/site-assets/images/global-nav/no-user-avatar.svg"
+              src="https://i.etsystatic.com/5620966/c/1969/1969/0/765/il/c5aa81/2297797947/il_175xN.2297797947_p8km.jpg"
               alt="user avatar"
               height={24}
               width={24}
               className="rounded-full h-[24px] w-[24px] max-w-full object-cover border"
-              onLoad={handleImageLoad}
-              onError={() => console.error("1. Error loading image :(")}
             />
-          )}
-          <Down className="h-6 w-6" />
-        </Button>
-        <Button className="relative">
-          <Cart className="h-6 w-6" />
-          <span className="absolute -top-2 right-0 text-xs bg-slate-700 text-white p-0.5 rounded-full h-6 w-6 flex justify-center items-center">
-            9+
-          </span>
-        </Button>
-      </div>
+            <Down className="h-6 w-6" />
+          </Button>
+          <Button className="relative">
+            <Cart className="h-6 w-6" />
+            <span className="absolute -top-2 right-0 text-xs bg-slate-700 text-white p-0.5 rounded-full h-6 w-6 flex justify-center items-center">
+              9+
+            </span>
+          </Button>
+        </div>
+        <MenuItems />
+      </section>
     </nav>
   );
 };

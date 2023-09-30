@@ -13,34 +13,21 @@
  * Date: 22, September 2023
  */
 
+import React from "react";
 import Image from "next/image";
-import React, { useState } from "react";
 
 const ModalContent = ({ product }) => {
   const { title, price, shop, thumbnail } = product || {};
-  const [imageLoaded, setImageLoaded] = useState(false);
-
-  const handleImageLoad = () => {
-    setImageLoaded(true);
-  };
 
   return (
     <section className="h-full w-full flex gap-x-2">
-      {imageLoaded ? (
-        <div
-          className={`bg-gray-200 h-[214px] w-full max-w-full object-cover object-top rounded animate-pulse`}
-        ></div>
-      ) : (
-        <Image
-          src={thumbnail}
-          alt={title}
-          height={214}
-          width={214}
-          className="h-[214px] w-full max-w-full object-cover object-top rounded"
-          onLoad={handleImageLoad}
-          onError={() => console.error("3. Error loading image :(")}
-        />
-      )}
+      <Image
+        src={thumbnail}
+        alt={title}
+        height={214}
+        width={214}
+        className="h-[214px] w-full max-w-full object-cover object-top rounded"
+      />
       <div className="flex flex-col gap-y-2">
         <div className="bg-[#eaeaea99] p-2 rounded flex flex-col gap-y-2 h-fit">
           <h2 className="line-clamp-2">{title}</h2>
