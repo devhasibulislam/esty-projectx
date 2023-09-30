@@ -54,7 +54,7 @@ const Home = () => {
 
   return (
     <section className="flex flex-col gap-y-8">
-      <header className="bg-white p-4 shadow">
+      <header className="bg-white pt-4 shadow">
         {/* This is for large device */}
         <Header />
       </header>
