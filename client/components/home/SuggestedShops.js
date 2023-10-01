@@ -60,7 +60,9 @@ const SuggestedShops = () => {
   return (
     <section className="grid grid-cols-4 gap-4">
       <article className="flex flex-col justify-center">
-        <h1 className="text-2xl">Shops we think <br /> you'll love</h1>
+        <h1 className="text-2xl">
+          Shops we think <br /> you&lsquo;ll love
+        </h1>
         <p className="text-sm text-slate-500">Based on your recent activity</p>
       </article>
       {shops.map((shop, index) => (
@@ -96,8 +98,9 @@ const SuggestedShops = () => {
                     {Array.from(
                       { length: shop.rating },
                       (_, index) => index
-                    ).map((_) => (
+                    ).map((_, index) => (
                       <svg
+                        key={index}
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 24 24"
                         fill="currentColor"
