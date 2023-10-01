@@ -13,6 +13,7 @@
  * Date: 19, September 2023
  */
 
+import Footer from "@/components/footer/largeDevice/Footer";
 import Header from "@/components/header/largeDevice/Header";
 import ActivityDresses1 from "@/components/home/ActivityDresses1";
 import ActivityDresses2 from "@/components/home/ActivityDresses2";
@@ -132,6 +133,9 @@ const Home = () => {
           <GiftCategories />
         </section>
       </main>
+      <footer>
+        <Footer />
+      </footer>
     </section>
   );
 };
