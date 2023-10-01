@@ -16,6 +16,7 @@
 import Header from "@/components/header/largeDevice/Header";
 import RecentView1 from "@/components/home/RecentView1";
 import RecentView2 from "@/components/home/RecentView2";
+import RecentView3 from "@/components/home/RecentView3";
 import Sponsored from "@/components/home/Sponsored";
 import ProductCard from "@/components/shared/ProductCard";
 import Head from "next/head";
@@ -94,6 +95,9 @@ const Home = () => {
         </section>
         <section className="max-w-7xl mx-auto py-8">
           <Sponsored />
+        </section>
+        <section className="max-w-7xl mx-auto py-8">
+          <RecentView3 />
         </section>
       </main>
     </section>
