@@ -21,7 +21,7 @@ const Sponsored = () => {
   const sponsors = [
     {
       thumbnail:
-        "https://i.etsystatic.com/9428546/c/1583/1257/0/338/il/9585de/5310762388/il_680x540.5310762388_h0oq.jpg",
+        "https://i.etsystatic.com/27274726/c/1174/933/0/200/il/bee5bd/2811554592/il_680x540.2811554592_5s0y.jpg",
       price: {
         amount: 155.94,
         currency: "USD",
@@ -45,9 +45,9 @@ const Sponsored = () => {
     },
     {
       thumbnail:
-        "https://i.etsystatic.com/40405361/r/il/df57d4/4528704258/il_680x540.4528704258_7kqz.jpg",
+        "https://i.etsystatic.com/45578016/r/il/79fd95/5363342639/il_680x540.5363342639_1ij1.jpg",
       price: {
-        amount: 54.0,
+        amount: 54.09,
         currency: "USD",
       },
     },
@@ -61,7 +61,7 @@ const Sponsored = () => {
     },
     {
       thumbnail:
-        "https://i.etsystatic.com/40114096/r/il/7892a6/5060669880/il_680x540.5060669880_hy0y.jpg",
+        "https://v.etsystatic.com/video/upload/ac_none,du_15,q_auto:good/IMG_1648_tp9ovp.mp4",
       price: {
         amount: 53.02,
         currency: "USD",
@@ -127,7 +127,7 @@ const Sponsored = () => {
               alt={sponsor.thumbnail}
               width={418}
               height={216}
-              className="rounded-lg h-[216px] w-full object-contain hover:shadow"
+              className="rounded-lg h-[216px] w-full object-cover hover:shadow"
             />
           )}
 
