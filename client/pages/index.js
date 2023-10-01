@@ -14,6 +14,7 @@
  */
 
 import Header from "@/components/header/largeDevice/Header";
+import ActivityDresses1 from "@/components/home/ActivityDresses1";
 import FavoriteItems from "@/components/home/FavoriteItems";
 import RecentView1 from "@/components/home/RecentView1";
 import RecentView2 from "@/components/home/RecentView2";
@@ -110,6 +111,9 @@ const Home = () => {
         </section>
         <section className="max-w-7xl mx-auto py-8">
           <ShopperSuggestions />
+        </section>
+        <section className="max-w-7xl mx-auto py-8">
+          <ActivityDresses1 />
         </section>
       </main>
     </section>

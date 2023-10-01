@@ -29,7 +29,7 @@ const RecentView1 = () => {
   const recentProducts = [
     {
       thumbnail:
-        "https://i.etsystatic.com/37815744/c/2000/1588/0/222/il/9e18a4/5323316077/il_680x540.5323316077_eswp.jpg",
+        "https://i.etsystatic.com/38276030/c/2000/1588/0/187/il/3f82b8/5276754055/il_680x540.5276754055_evje.jpg",
       price: {
         amount: 193.55,
         currency: "USD",
