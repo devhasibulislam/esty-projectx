@@ -17,6 +17,10 @@ import Image from "next/image";
 import React, { useRef } from "react";
 import Favorite from "../icons/Favorite";
 
+const useVideoRef = () => {
+  return useRef(null);
+};
+
 const Sponsored = () => {
   const sponsors = [
     {
@@ -69,7 +73,7 @@ const Sponsored = () => {
     },
   ];
 
-  const videoRefs = sponsors.map(() => useRef(null));
+  const videoRefs = sponsors.map(() => useVideoRef());
 
   const handleVideoHover = (index, isHovered) => {
     const video = videoRefs[index].current;
@@ -164,7 +168,7 @@ const Sponsored = () => {
       <div className="flex flex-col justify-center">
         <p className="text-sm">
           <b>Fun fact:</b> behind every sponsored item there is an Etsy seller
-          hoping you'll check out their shop
+          hoping you&apos;ll check out their shop
         </p>
       </div>
     </section>
