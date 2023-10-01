@@ -17,10 +17,6 @@ import Image from "next/image";
 import React, { useRef } from "react";
 import Favorite from "../icons/Favorite";
 
-const useVideoRef = () => {
-  return useRef(null);
-};
-
 const Sponsored = () => {
   const sponsors = [
     {
@@ -73,10 +69,8 @@ const Sponsored = () => {
     },
   ];
 
-  const videoRefs = sponsors.map(() => useVideoRef());
-
-  const handleVideoHover = (index, isHovered) => {
-    const video = videoRefs[index].current;
+  const handleVideoHover = (event, isHovered) => {
+    const video = event.target;
     if (video) {
       if (isHovered) {
         video
@@ -117,12 +111,13 @@ const Sponsored = () => {
         >
           {sponsor.thumbnail.includes("v.") ? (
             <video
-              ref={videoRefs[index]}
               height="216"
               width="auto"
               loop
               muted
               className="rounded-lg h-[216px] object-cover object-center w-full hover:shadow"
+              onMouseEnter={(e) => handleVideoHover(e, true)}
+              onMouseLeave={(e) => handleVideoHover(e, false)}
             >
               <source src={sponsor.thumbnail} type="video/mp4" />
             </video>
