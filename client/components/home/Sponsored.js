@@ -15,6 +15,7 @@
 
 import Image from "next/image";
 import React, { useRef } from "react";
+import Favorite from "../icons/Favorite";
 
 const Sponsored = () => {
   const sponsors = [
@@ -108,7 +109,7 @@ const Sponsored = () => {
           key={index}
           onMouseEnter={() => handleVideoHover(index, true)}
           onMouseLeave={() => handleVideoHover(index, false)}
-          className="relative"
+          className="relative group"
         >
           {sponsor.thumbnail.includes("v.") ? (
             <video
@@ -147,6 +148,16 @@ const Sponsored = () => {
               </svg>
             </span>
           )}
+          <Button className="absolute top-2 right-2 group-hover:opacity-100 opacity-0 transition-opacity delay-100 ease-linear border">
+            <Favorite className="w-6 h-6" />
+          </Button>
+
+          <span className="absolute left-2 bottom-2 bg-white px-2 rounded-full text-sm font-bold border group-hover:opacity-100 opacity-0 transition-opacity delay-100 ease-linear">
+            <span className="text-xs font-normal">
+              {sponsor.price.currency}
+            </span>{" "}
+            {sponsor.price.amount}
+          </span>
         </div>
       ))}
 
@@ -159,5 +170,20 @@ const Sponsored = () => {
     </section>
   );
 };
+
+function Button({ children, ...props }) {
+  return (
+    <button
+      {...props}
+      className={
+        "bg-slate-100 p-1.5 flex justify-center items-center rounded-full hover:bg-slate-300 hover:text-white transition-colors duration-100" +
+        " " +
+        props.className
+      }
+    >
+      {children}
+    </button>
+  );
+}
 
 export default Sponsored;
