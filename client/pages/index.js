@@ -18,6 +18,7 @@ import FavoriteItems from "@/components/home/FavoriteItems";
 import RecentView1 from "@/components/home/RecentView1";
 import RecentView2 from "@/components/home/RecentView2";
 import RecentView3 from "@/components/home/RecentView3";
+import ShopperSuggestions from "@/components/home/ShopperSuggestions";
 import Sponsored from "@/components/home/Sponsored";
 import SuggestedShops from "@/components/home/SuggestedShops";
 import ProductCard from "@/components/shared/ProductCard";
@@ -106,6 +107,9 @@ const Home = () => {
         </section>
         <section className="max-w-7xl mx-auto py-8">
           <SuggestedShops />
+        </section>
+        <section className="max-w-7xl mx-auto py-8">
+          <ShopperSuggestions />
         </section>
       </main>
     </section>
