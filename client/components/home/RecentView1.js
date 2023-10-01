@@ -165,7 +165,7 @@ const RecentView1 = () => {
               alt={category.thumbnail}
               height={75}
               width={75}
-              className="rounded-full"
+              className="rounded-full h-[75px] object-cover"
             />
             <p className="group text-sm flex flex-row gap-x-2 items-center font-bold">
               {category.title}{" "}
