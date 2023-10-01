@@ -25,7 +25,7 @@ const ActivityDresses4 = () => {
     },
     {
       thumbnail:
-        "https://i.etsystatic.com/29453178/r/il/de21da/4657737903/il_300x300.4657737903_nogq.jpg",
+        "https://i.etsystatic.com/40350497/r/il/c94b43/5227769654/il_300x300.5227769654_i1x7.jpg",
       title: "lingerie sets",
     },
     {
@@ -74,13 +74,13 @@ const ActivityDresses4 = () => {
       </article>
       <div className="grid grid-cols-6 gap-8 justify-items-center">
         {recentProducts.map((product, index) => (
-          <div key={index} className="border-b-2 border-b-transparent hover:border-b-black transition-colors ease-linear delay-100">
+          <div key={index} className="border-b-2 border-b-transparent hover:border-b-black transition-colors ease-linear delay-100 flex flex-col gap-y-2">
             <Image
               src={product.thumbnail}
               alt={product.thumbnail}
               height={120}
               width={120}
-              className="h-[120px] w-[120px] rounded-full cursor-pointer object-cover mx-auto hover:scale-110 transition ease-linear delay-100"
+              className="h-[120px] w-[120px] rounded-full cursor-pointer object-cover mx-auto hover:scale-105 transition ease-linear delay-100 border"
             />
             <p className="text-center">{product.title}</p>
           </div>
