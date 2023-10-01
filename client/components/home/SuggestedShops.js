@@ -77,8 +77,8 @@ const SuggestedShops = () => {
                 src={thumbnail}
                 alt={thumbnail}
                 width={100}
-                height={100}
-                className="rounded-md h-[100px] w-full hover:opacity-50 transition-opacity ease-linear delay-100 border"
+                height={120}
+                className="rounded-md h-[120px] w-full object-cover hover:opacity-50 transition-opacity ease-linear delay-100 border"
               />
             ))}
           </div>

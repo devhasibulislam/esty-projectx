@@ -122,9 +122,9 @@ const ShopperSuggestions = () => {
                   src={thumbnail}
                   alt={thumbnail}
                   width={100}
-                  height={100}
+                  height={150}
                   className={
-                    "h-[100px] w-full hover:opacity-50 object-cover transition-opacity ease-linear delay-100 border" +
+                    "h-[150px] w-full hover:opacity-50 object-cover transition-opacity ease-linear delay-100 border" +
                     " " +
                     (index === suggestion.thumbnails.length - 2
                       ? "rounded-bl-lg"
