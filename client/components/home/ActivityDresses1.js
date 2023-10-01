@@ -80,7 +80,7 @@ const ActivityDresses1 = () => {
   return (
     <section className="flex flex-col gap-y-6">
       <article className="flex flex-col gap-y-1">
-        <h1 className="text-2xl flex flex-row items-center gap-x-2 group w-fit">
+        <h1 className="text-2xl flex flex-row items-center gap-x-2 group w-fit cursor-pointer">
           Women's Dresses{" "}
           <svg
             xmlns="http://www.w3.org/2000/svg"
