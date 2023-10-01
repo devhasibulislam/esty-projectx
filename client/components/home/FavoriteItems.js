@@ -66,7 +66,7 @@ const FavoriteItems = () => {
           />
           <article className="p-2.5">
             <h1 className="line-clamp-1 text-base">{item.title}</h1>
-            <p className="line-clamp-1 text-sm">{item.shop}</p>
+            <p className="line-clamp-1 text-sm text-slate-500">{item.shop}</p>
           </article>
 
           <Button className="absolute top-2 right-2 group-hover:opacity-100 opacity-0 transition-opacity delay-100 ease-linear">
