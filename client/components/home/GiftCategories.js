@@ -50,7 +50,7 @@ const GiftCategories = () => {
       <article className="flex flex-col justify-center items-center gap-y-1">
         <h1 className="text-3xl">Explore one-of-a-kind finds</h1>
         <p className="text-sm text-slate-500">
-          There's no Etsy warehouse—just millions of people selling the things
+          There&apos;s no Etsy warehouse—just millions of people selling the things
           they love
         </p>
       </article>
