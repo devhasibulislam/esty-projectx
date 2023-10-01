@@ -15,6 +15,9 @@
 
 import Header from "@/components/header/largeDevice/Header";
 import ActivityDresses1 from "@/components/home/ActivityDresses1";
+import ActivityDresses2 from "@/components/home/ActivityDresses2";
+import ActivityDresses3 from "@/components/home/ActivityDresses3";
+import ActivityDresses4 from "@/components/home/ActivityDresses4";
 import FavoriteItems from "@/components/home/FavoriteItems";
 import RecentView1 from "@/components/home/RecentView1";
 import RecentView2 from "@/components/home/RecentView2";
@@ -114,6 +117,15 @@ const Home = () => {
         </section>
         <section className="max-w-7xl mx-auto py-8">
           <ActivityDresses1 />
+        </section>
+        <section className="max-w-7xl mx-auto py-8">
+          <ActivityDresses2 />
+        </section>
+        <section className="max-w-7xl mx-auto py-8">
+          <ActivityDresses3 />
+        </section>
+        <section className="max-w-7xl mx-auto py-8">
+          <ActivityDresses4 />
         </section>
       </main>
     </section>
