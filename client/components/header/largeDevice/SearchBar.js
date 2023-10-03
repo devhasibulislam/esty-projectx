@@ -18,7 +18,7 @@ import React from "react";
 
 const SearchBar = () => {
   return (
-    <div className="relative flex-1">
+    <div className="relative flex-1 basis-96">
       {/* Display Searchbar */}
       <div className="flex flex-row border border-black rounded-full w-full">
         <input

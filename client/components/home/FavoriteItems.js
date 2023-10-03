@@ -46,7 +46,7 @@ const FavoriteItems = () => {
   ];
 
   return (
-    <section className="grid grid-cols-5 gap-4">
+    <section className="grid lg:grid-cols-5 md:grid-cols-2 grid-cols-1 gap-4">
       <article>
         <h1 className="text-2xl">
           Favorite the items you like to get instant recommendations

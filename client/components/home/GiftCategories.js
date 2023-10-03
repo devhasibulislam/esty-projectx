@@ -57,7 +57,7 @@ const GiftCategories = () => {
 
       <div className="flex flex-col gap-y-6">
         <h2 className="text-2xl">Shop our popular gift categories</h2>
-        <div className="grid grid-cols-5 gap-x-6">
+        <div className="grid lg:grid-cols-5 md:grid-cols-2 grid-cols-1 gap-6">
           {categories.map((category, index) => (
             <div key={index} className="rounded-lg border hover:shadow-lg transition-shadow ease-linear delay-100 cursor-pointer">
               <Image

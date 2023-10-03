@@ -28,11 +28,11 @@ const MenuItems = () => {
 
   return (
     <section className="">
-      <div className="flex flex-row justify-between">
+      <div className="flex flex-row lg:gap-0 gap-4 justify-between overflow-x-auto">
         {menuItems.map((item, index) => (
           <span
             key={index}
-            className="text-sm cursor-pointer border-b-2 border-b-transparent hover:border-b-black transition-colors delay-100 ease-linear pb-2"
+            className="text-sm cursor-pointer border-b-2 border-b-transparent hover:border-b-black transition-colors delay-100 ease-linear pb-2 whitespace-nowrap"
           >
             {item}
           </span>

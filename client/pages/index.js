@@ -99,37 +99,37 @@ const Home = () => {
             <RecentView1 />
           </div>
         </section>
-        <section className="max-w-7xl mx-auto pb-8">
+        <section className="max-w-7xl mx-auto pb-8 px-4">
           <RecentView2 />
         </section>
-        <section className="max-w-7xl mx-auto py-8">
+        <section className="max-w-7xl mx-auto py-8 px-4">
           <Sponsored />
         </section>
-        <section className="max-w-7xl mx-auto py-8">
+        <section className="max-w-7xl mx-auto py-8 px-4">
           <RecentView3 />
         </section>
-        <section className="max-w-7xl mx-auto py-8">
+        <section className="max-w-7xl mx-auto py-8 px-4">
           <FavoriteItems />
         </section>
-        <section className="max-w-7xl mx-auto py-8">
+        <section className="max-w-7xl mx-auto py-8 px-4">
           <SuggestedShops />
         </section>
-        <section className="max-w-7xl mx-auto py-8">
+        <section className="max-w-7xl mx-auto py-8 px-4">
           <ShopperSuggestions />
         </section>
-        <section className="max-w-7xl mx-auto py-8">
+        <section className="max-w-7xl mx-auto py-8 px-4">
           <ActivityDresses1 />
         </section>
-        <section className="max-w-7xl mx-auto py-8">
+        <section className="max-w-7xl mx-auto py-8 px-4">
           <ActivityDresses2 />
         </section>
-        <section className="max-w-7xl mx-auto py-8">
+        <section className="max-w-7xl mx-auto py-8 px-4">
           <ActivityDresses3 />
         </section>
-        <section className="max-w-7xl mx-auto py-8">
+        <section className="max-w-7xl mx-auto py-8 px-4">
           <ActivityDresses4 />
         </section>
-        <section className="max-w-7xl mx-auto py-8">
+        <section className="max-w-7xl mx-auto py-8 px-4">
           <GiftCategories />
         </section>
       </main>

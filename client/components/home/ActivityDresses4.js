@@ -72,7 +72,7 @@ const ActivityDresses4 = () => {
         </h1>
         <p className="text-sm text-slate-500">Based on your activity</p>
       </article>
-      <div className="grid grid-cols-6 gap-8 justify-items-center">
+      <div className="grid lg:grid-cols-6 md:grid-cols-3 grid-cols-2 gap-8 justify-items-center">
         {recentProducts.map((product, index) => (
           <div key={index} className="border-b-2 border-b-transparent hover:border-b-black transition-colors ease-linear delay-100 flex flex-col gap-y-2">
             <Image

@@ -58,7 +58,7 @@ const SuggestedShops = () => {
   ];
 
   return (
-    <section className="grid grid-cols-4 gap-4">
+    <section className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4">
       <article className="flex flex-col justify-center">
         <h1 className="text-2xl">
           Shops we think <br /> you&lsquo;ll love

@@ -127,9 +127,9 @@ const Footer3 = () => {
   return (
     <section className="bg-[#2e446a] py-8">
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-5 gap-x-4">
+        <div className="grid lg:grid-cols-5 md:grid-cols-2 grid-cols-1 gap-4">
           {items.map((item, index) => (
-            <div key={index} className="text-white flex flex-col gap-y-3">
+            <div key={index} className="text-white flex flex-col gap-3">
               <h2 className="text-xl">{item.name}</h2>
               <ul className="text-sm flex flex-col gap-y-0.5">
                 {item.subItems.map((subItem, index) => (

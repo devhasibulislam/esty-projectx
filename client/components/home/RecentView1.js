@@ -112,7 +112,7 @@ const RecentView1 = () => {
     <section className="flex flex-col gap-y-4">
       <div className="flex flex-col gap-y-2">
         <h1>Because you viewed</h1>
-        <div className="flex flex-row gap-1.5">
+        <div className="flex flex-row flex-wrap gap-1.5">
           {recentThumbnails.map((thumbnail, index) => (
             <Image
               key={index}
@@ -130,9 +130,9 @@ const RecentView1 = () => {
           <div
             key={index}
             className={
-              "group relative col-span-2 hover:shadow-lg rounded-lg transition-shadow delay-100 ease-linear" +
+              "group relative lg:col-span-2 md:col-span-5 col-span-10 hover:shadow-lg rounded-lg transition-shadow delay-100 ease-linear" +
               " " +
-              `${index === 0 ? "row-span-2 col-span-4" : ""}`
+              `${index === 0 ? "lg:row-span-2 lg:col-span-4" : ""}`
             }
           >
             <Image
@@ -154,7 +154,7 @@ const RecentView1 = () => {
           </div>
         ))}
       </div>
-      <div className="flex flex-row justify-between gap-x-4">
+      <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4">
         {recentCategories.map((category, index) => (
           <div
             key={index}

@@ -84,7 +84,7 @@ const Sponsored = () => {
   };
 
   return (
-    <section className="grid grid-cols-4 gap-6">
+    <section className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-6">
       <div className="flex flex-col justify-center">
         <p className="text-sm flex gap-x-2 items-center">
           Sponsored{" "}

@@ -104,7 +104,7 @@ const ActivityDresses1 = () => {
           <div
             key={index}
             className={
-              "group relative col-span-2 hover:shadow-lg rounded-lg transition-shadow delay-100 ease-linear" +
+              "group relative lg:col-span-2 md:col-span-5 col-span-10 hover:shadow-lg rounded-lg transition-shadow delay-100 ease-linear" +
               " " +
               `${index === 0 ? "row-span-2 col-span-4" : ""}`
             }

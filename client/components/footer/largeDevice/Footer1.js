@@ -56,7 +56,7 @@ const Footer1 = () => {
                 Read our wonderfully weird story
               </p>
             </article>
-            <div className="grid grid-cols-3 gap-x-8">
+            <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8">
               {stories.map((story, index) => (
                 <div key={index} className="flex flex-col gap-y-2">
                   <h2 className="text-xl">{story.title}</h2>
