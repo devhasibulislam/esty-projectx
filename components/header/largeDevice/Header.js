@@ -25,7 +25,7 @@ import MenuItems from "./MenuItems";
 
 const Header = () => {
   return (
-    <nav className="max-w-7xl mx-auto">
+    <nav className="max-w-7xl mx-auto lg:px-0 px-4">
       <section className="w-full h-full flex flex-col gap-y-4">
         <div className="flex flex-row flex-wrap items-center justify-center gap-4">
           <Logo className="text-[#f1641e] h-10 w-20" />
