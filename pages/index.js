@@ -75,16 +75,6 @@ const Home = () => {
         <Header />
       </header>
       <main className="">
-        {/* <section className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-8">
-          {womensDress.map(({ title, price, shop, thumbnail }, index) => (
-            <ProductCard
-              key={index}
-              product={{ title, price, shop, thumbnail }}
-            />
-          ))}
-        </section> */}
-
-        {/* <section className="bg-gradient-to-b from-[#feecd4] via-[#feecd4] to-white bg-cover p-8"> */}
         <section
           className="p-8"
           style={{
